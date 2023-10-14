@@ -32,6 +32,6 @@ addDomElement.addEventListener('click', function () {
 // ascolto il click sul clear btn 
 clearDomElement.addEventListener('click', function () {
   tasksFieldDomElement.innerHTML = "";
-  inputDomElement.style.borderColor = "currentColor";
+  inputDomElement.style.backgroundColor = "transparent";
 })
 
