@@ -1,0 +1,113 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+/* reset rules */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input[type="text"] {
+  outline: none;
+  border: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* utilities */
+.btn {
+  border: 1.5px solid black;
+  line-height: 20px;
+  padding: 0 10px;
+  border-radius: 20px;
+  font-size: 17px;
+}
+
+/* checkbox restyling */
+
+.check {
+  appearance: none;
+  border: 2px solid black;
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+
+.check.checked:checked::before {
+  content: '\2713';
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  inset: 0;
+  background-color: #689CFF;
+}
+
+
+/* container */
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+/* card */
+.card {
+  max-width: 500px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.card__header {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.card__body {
+  margin-bottom: 40px;
+}
+
+.card__footer .input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.card__footer .button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-group #task-input {
+  border: 2px solid black;
+  font-size: 20px;
+  padding: 0 5px;
+}
+
+.card > * {
+  padding: 0 10px;
+}
+
+.card__body .task {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* .task__text.done {
+  text-decoration: line-through;
+} */
