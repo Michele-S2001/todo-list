@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,23 +9,26 @@
 <body>
   <div class="container">
     <div class="card">
+      <!-- card header -->
       <div class="card__header">
         <span>TO DO</span>
       </div>
+
+      <!-- card body -->
       <div class="card__body">
-        <!-- <div class="task">
-          <input type="checkbox" class="check checked">
-          <span class="task__text done">text place holder</span>
-        </div> -->
+        <!-- <input type="checkbox" class="check checked">
+        <span class="task__text add" >${inputValue}</span> -->
       </div>
+
+      <!-- card footer -->
       <div class="card__footer">
         <div class="input-group">
           <label for="task-input">What we have to do?</label>
-          <input type="text" id="task-input" autofocus>
+          <input type="text" id="task-input" autofocus placeholder="Inserire del testo">
         </div>
         <div class="button-group">
-          <button class="btn">Add task</button>
-          <button class="btn">Clear all</button>
+          <button class="btn" id="add">Add task</button>
+          <button class="btn" id="clear">Clear all</button>
         </div>
       </div>
     </div>
