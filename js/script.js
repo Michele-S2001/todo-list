@@ -24,6 +24,8 @@ addDomElement.addEventListener('click', function () {
     `
     taskDomElement.innerHTML += taskContentDomElement;
     tasksFieldDomElement.append(taskDomElement);
+
+    inputDomElement.value = "";
   }
 })
 
